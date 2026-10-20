@@ -1,0 +1,32 @@
+# Two checks a reader would otherwise take on trust: the ERC text passes the linter the ethereum/ERCs repository runs
+# (eipw, with that repository's own config, copied here as eipw.toml, over the same merged EIPs and ERCs corpus its CI
+# builds: scripts/lint-erc.sh), and the interface and reference implementation build and pass their tests.
+name: ci
+on:
+  push:
+  pull_request:
+# Nothing here writes back to the repo or uses the token. Every action is pinned to a commit (its tag in the comment).
+permissions:
+  contents: read
+jobs:
+  erc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: cargo install eipw --version 0.11.0 --locked
+      - run: scripts/lint-erc.sh
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          submodules: recursive
+      - uses: foundry-rs/foundry-toolchain@908c540300062bd5a7e473851cdb4282204cee09 # v1
+        with:
+          version: v1.7.1
+      - run: forge fmt --check
+      - run: forge build --sizes
+      - run: forge test -vvv

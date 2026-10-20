@@ -1,0 +1,22 @@
+# Foundry
+cache/
+out/
+broadcast/
+
+# Local secrets. A wallet key must never become a tracked file.
+.env
+.env.*
+*.key
+*.pem
+wallet.json
+
+# Agent/workflow working state. Plans, buildouts, specs and session notes are how the work gets done; they are
+# not the product and they never belong in a public repo.
+docs/plans/
+docs/builds/
+docs/prd/
+docs/reports/
+.annotations/
+.pilot/
+.claude/
+CLAUDE.md
