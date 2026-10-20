@@ -8,7 +8,7 @@ holds.
 
 **Status: draft, not submitted.** The text is in [`ERCS/erc-8454.md`](ERCS/erc-8454.md). ERC-8454 is the next number
 that was free on 2026-10-20; the ERC editors confirm it, or assign another, when the pull request is opened on
-ethereum/ERCs. Discussion opens on Ethereum Magicians first.
+ethereum/ERCs. Discussion: [Ethereum Magicians](https://ethereum-magicians.org/t/erc-8454-liquidity-locks/30028).
 
 ## Why
 
