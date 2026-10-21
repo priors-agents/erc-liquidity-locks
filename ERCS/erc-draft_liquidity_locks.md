@@ -1,9 +1,9 @@
 ---
-eip: 8454
+eip: 99905
 title: Liquidity Locks
 description: One interface for contracts that lock pool liquidity, with each lock's pool, amount, unlock time and beneficiary
 author: Priors contributors (@priors-agents)
-discussions-to: https://ethereum-magicians.org/t/erc-8454-liquidity-locks/30028
+discussions-to: https://ethereum-magicians.org/t/erc-tba-liquidity-locks/30028
 status: Draft
 type: Standards Track
 category: ERC
