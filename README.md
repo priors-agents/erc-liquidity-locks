@@ -6,9 +6,9 @@ summed per pool, so a scanner, a launchpad or a lender reads every conforming lo
 per locker. Which lockers to trust stays the reader's choice; the interface makes it checkable against what each locker
 holds.
 
-**Status: draft, not submitted.** The text is in
-[`ERCS/erc-draft_liquidity_locks.md`](ERCS/erc-draft_liquidity_locks.md). Its `eip: 99905` is a placeholder: the ERC
-editors assign the real number when the pull request is opened on ethereum/ERCs. Discussion: [Ethereum
+**Status: draft, submitted as [ethereum/ERCs#2107](https://github.com/ethereum/ERCs/pull/2107).** The text is in
+[`ERCS/erc-draft_liquidity_locks.md`](ERCS/erc-draft_liquidity_locks.md). Its `eip: 99905` is a placeholder until the
+ERC editors assign a number. Discussion: [Ethereum
 Magicians](https://ethereum-magicians.org/t/erc-tba-liquidity-locks/30028).
 
 ## Why
