@@ -1,4 +1,4 @@
-# Liquidity Locks (draft ERC)
+# ERC-8463: Pool Liquidity Locks (draft)
 
 One interface for any contract that locks pool liquidity, whether pool tokens of a v2-style pair or a v3- or v4-style
 position NFT: which pool, how much, until when, for whom, and who is paid the fees meanwhile. Locks are listed and
@@ -7,9 +7,8 @@ per locker. Which lockers to trust stays the reader's choice; the interface make
 holds.
 
 **Status: draft, submitted as [ethereum/ERCs#2107](https://github.com/ethereum/ERCs/pull/2107).** The text is in
-[`ERCS/erc-draft_liquidity_locks.md`](ERCS/erc-draft_liquidity_locks.md). Its `eip: 99905` is a placeholder until the
-ERC editors assign a number. Discussion: [Ethereum
-Magicians](https://ethereum-magicians.org/t/erc-tba-liquidity-locks/30028).
+[`ERCS/erc-8463.md`](ERCS/erc-8463.md). The editors assigned it ERC-8463 on 2026-10-27. Discussion: [Ethereum
+Magicians](https://ethereum-magicians.org/t/erc-8463-liquidity-locks/30028).
 
 ## Why
 
@@ -27,7 +26,7 @@ permanently or for a time, but none names a pool, an amount of liquidity, an unl
 
 | Path | What |
 |---|---|
-| `ERCS/erc-draft_liquidity_locks.md` | The ERC text, in the ethereum/ERCs template |
+| `ERCS/erc-8463.md` | The ERC text, in the ethereum/ERCs template |
 | `src/ILiquidityLocks.sol` | The interface |
 | `src/LiquidityLocker.sol` | A reference locker for v2-style pool tokens and v3-style position NFTs (not audited) |
 | `test/LiquidityLocker.t.sol` | Foundry tests, including per-pool sums that stay cheap however many locks a pool has |
